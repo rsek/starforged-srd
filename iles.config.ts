@@ -1,7 +1,8 @@
 import { defineConfig } from 'iles'
 
 export default defineConfig({
-	siteUrl: 'https://rsek.github.io/starforged-srd',
+	siteUrl: 'https://rsek.github.io',
+	vite: { base: '/starforged-srd' },
 	modules: ['@islands/headings'],
 	markdown: {
 		remarkPlugins: ['remark-gfm']
