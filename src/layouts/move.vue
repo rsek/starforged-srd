@@ -7,7 +7,9 @@
 		<div class="move-text">
 			<slot></slot>
 		</div>
-		<RouterLink to="./">Return</RouterLink>
+		<RouterLink :to="`/${$meta.href.split('/').slice(-3, -1).join('/')}`"
+			>Return</RouterLink
+		>
 	</article>
 </template>
 
@@ -20,6 +22,4 @@
 }
 </style>
 
-<script setup lang="ts">
-// const moveCategory = useDocuments()
-</script>
+<script setup lang="ts"></script>
