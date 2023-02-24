@@ -6,8 +6,6 @@ on:
 
 jobs:
   deploy:
-    permissions:
-      contents: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -29,7 +27,7 @@ jobs:
       - name: Deploy Site
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ../dist
           permissions:
             contents: write
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ../dist
