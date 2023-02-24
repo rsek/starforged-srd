@@ -27,7 +27,5 @@ jobs:
       - name: Deploy Site
         uses: peaceiris/actions-gh-pages@v3
         with:
-          permissions:
-            contents: write
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ../dist
