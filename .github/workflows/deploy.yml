@@ -1,4 +1,4 @@
-name: Deploy îles site
+name: Deploy site to github pages
 
 on:
   push:
