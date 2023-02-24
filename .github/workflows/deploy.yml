@@ -1,5 +1,6 @@
 name: Deploy SRD site to Github pages
-
+permissions:
+  contents: write
 on:
   push:
     branches:
@@ -30,3 +31,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ../dist
+          permissions:
+            contents: write
