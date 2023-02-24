@@ -1,32 +1,32 @@
-- name: Deploy îles site
+name: Deploy îles site
 
-  on:
-    push:
-      branches:
-        - main
+on:
+  push:
+    branches:
+      - main
 
-  jobs:
-    deploy:
-      runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v2
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
 
-        - name: Use Node.js
-          uses: actions/setup-node@v1
-          with:
-            node-version: 16.x
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16.x
 
-        - uses: pnpm/action-setup@v1.2.1
-          with:
-            version: 6.10.3
-            run_install: |
-              - recursive: false
+      - uses: pnpm/action-setup@v1.2.1
+        with:
+          version: 6.10.3
+          run_install: |
+            - recursive: false
 
-        - name: Build Site
-          run: npm run build
+      - name: Build Site
+        run: npm run build
 
-        - name: Deploy Site
-          uses: peaceiris/actions-gh-pages@v3
-          with:
-            github_token: ${{ secrets.GITHUB_TOKEN }}
-            publish_dir: ./dist
+      - name: Deploy Site
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
