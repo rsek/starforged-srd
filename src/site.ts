@@ -1,4 +1,4 @@
 export default {
-  title: 'îles',
-  description: 'Islands of interactivity with Vue in Vite.js'
+	title: 'Ironsworn: Starforged SRD',
+	description: 'Experimental online SRD for Ironsworn: Starforged'
 }

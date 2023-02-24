@@ -13,6 +13,7 @@ declare module '@vue/runtime-core' {
     EcosystemIcon: typeof import('./src/components/icons/EcosystemIcon.vue')['default']
     FrameworkLink: typeof import('./src/components/FrameworkLink.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    Moves: typeof import('./src/components/Moves.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     SupportIcon: typeof import('./src/components/icons/SupportIcon.vue')['default']
