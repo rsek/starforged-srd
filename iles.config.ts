@@ -2,7 +2,6 @@ import { defineConfig } from 'iles'
 
 export default defineConfig({
 	siteUrl: 'https://rsek.github.io/starforged-srd',
-	// vite: { base: '/starforged-srd' },
 	markdown: {
 		remarkPlugins: ['remark-gfm']
 	},
