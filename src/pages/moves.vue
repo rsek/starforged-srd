@@ -6,7 +6,9 @@ title: Moves
 	<div class="moves">
 		<ul>
 			<li v-for="moveCategory in moveCategories">
-				<a :href="moveCategory.href">{{ moveCategory.frontmatter.title }}</a>
+				<RouterLink :to="moveCategory.href">{{
+					moveCategory.frontmatter.title
+				}}</RouterLink>
 			</li>
 		</ul>
 	</div>
