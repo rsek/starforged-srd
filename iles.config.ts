@@ -1,6 +1,7 @@
 import { defineConfig } from 'iles'
 
 export default defineConfig({
+	siteUrl: 'https://rsek.github.io',
 	modules: ['@islands/headings'],
 	markdown: {
 		remarkPlugins: ['remark-gfm']
