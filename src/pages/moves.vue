@@ -23,5 +23,7 @@ title: Moves
 </style>
 
 <script setup lang="ts">
-const moveCategories = useDocuments('~/pages/moves')
+const moveCategories = useDocuments('~/pages/moves/**').value.filter((page) =>
+	page.filename.endsWith('index.mdx')
+)
 </script>
