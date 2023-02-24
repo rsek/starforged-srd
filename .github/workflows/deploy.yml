@@ -1,6 +1,4 @@
 name: Deploy SRD site to Github pages
-permissions:
-  contents: write
 on:
   push:
     branches:
@@ -8,6 +6,8 @@ on:
 
 jobs:
   deploy:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
