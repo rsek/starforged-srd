@@ -3,7 +3,7 @@ name: Deploy îles site
 on:
   push:
     branches:
-      - main
+      - $default-branch
 
 jobs:
   deploy:
