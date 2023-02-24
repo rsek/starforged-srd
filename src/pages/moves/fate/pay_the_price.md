@@ -5,7 +5,7 @@ title: Pay the Price
 **When you suffer the outcome of an action**, choose one.
 
 - Make the most obvious negative outcome happen.
-- [Ask the Oracle](/moves/fate/ask_the_oracle) for inspiration. Interpret the answer as a hardship or complication appropriate to the situation.
+- [Ask the Oracle](/starforged-srd/moves/fate/ask_the_oracle) for inspiration. Interpret the answer as a hardship or complication appropriate to the situation.
 - Roll on the table below. If the result doesn’t fit the situation, roll again.
 
 | Roll   | Result                                                               |

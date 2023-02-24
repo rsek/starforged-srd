@@ -8,4 +8,4 @@ On a **strong hit**, you discover something helpful and specific. The path you m
 
 On a **weak hit**, the information provides new insight, but also complicates your quest. Envision what you discover. Then, take +1 momentum.
 
-On a **miss**, your investigation unearths a dire threat or reveals an unwelcome truth that undermines your quest. [Pay the Price](/moves/fate/pay_the_price).
+On a **miss**, your investigation unearths a dire threat or reveals an unwelcome truth that undermines your quest. [Pay the Price](/starforged-srd/moves/fate/pay_the_price).

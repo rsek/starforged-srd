@@ -10,4 +10,4 @@ Then, envision the situation and choose the number of segments for the scene’s
 - You are on equal footing: Six segments
 - You have strong advantage: Eight segments
 
-When the clock is full, you must [Finish the Scene](/moves/scene_challenge/finish_the_scene).
+When the clock is full, you must [Finish the Scene](/starforged-srd/moves/scene_challenge/finish_the_scene).

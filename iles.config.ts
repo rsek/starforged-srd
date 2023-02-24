@@ -1,16 +1,15 @@
 import { defineConfig } from 'iles'
 
 export default defineConfig({
-	siteUrl: 'https://rsek.github.io',
-	vite: { base: '/starforged-srd' },
-	modules: ['@islands/headings'],
+	siteUrl: 'https://rsek.github.io/starforged-srd',
+	// vite: { base: '/starforged-srd' },
 	markdown: {
 		remarkPlugins: ['remark-gfm']
 	},
 	extendFrontmatter(frontmatter, filename) {
 		switch (true) {
 			case /\/moves\/.+/.test(filename):
-				if (/\.mdx?$/) frontmatter.layout = 'move-category'
+				if (/index\.mdx?$/.test(filename)) frontmatter.layout = 'move-category'
 				else frontmatter.layout = 'move'
 				break
 			default:

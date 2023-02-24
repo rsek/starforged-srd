@@ -4,7 +4,7 @@ title: Begin a Session
 
 **When you begin a significant session or chapter of play**, do all of the following.
 
-- Identify or adjust flagged content and [Set a Flag](/moves/session/set_a_flag).
+- Identify or adjust flagged content and [Set a Flag](/starforged-srd/moves/session/set_a_flag).
 - Review or recap what happened last session.
 - Set the scene by envisioning your character’s current situation and intent.
 

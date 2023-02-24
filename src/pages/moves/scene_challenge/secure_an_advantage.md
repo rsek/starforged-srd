@@ -15,4 +15,4 @@ On a **strong hit**, take both. On a **strong hit with a match**, take both and 
 - Take +2 momentum
 - Add +1 on your next move (not a progress move)
 
-On a **miss**, you fail or your assumptions betray you. Fill a clock segment and [Pay the Price](/moves/fate/pay_the_price). On a **miss with a match**, fill two segments and [Pay the Price](/moves/fate/pay_the_price).
+On a **miss**, you fail or your assumptions betray you. Fill a clock segment and [Pay the Price](/starforged-srd/moves/fate/pay_the_price). On a **miss with a match**, fill two segments and [Pay the Price](/starforged-srd/moves/fate/pay_the_price).

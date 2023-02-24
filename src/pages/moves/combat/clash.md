@@ -6,6 +6,6 @@ title: Clash
 
 On a **strong hit**, mark progress twice. You overwhelm your foe and are in control.
 
-On a **weak hit**, mark progress, but you are dealt a counterblow or setback. You stay in a bad spot and must [Pay the Price](/moves/fate/pay_the_price).
+On a **weak hit**, mark progress, but you are dealt a counterblow or setback. You stay in a bad spot and must [Pay the Price](/starforged-srd/moves/fate/pay_the_price).
 
-On a **miss**, your foe dominates this exchange. You stay in a bad spot and must [Pay the Price](/moves/fate/pay_the_price).
+On a **miss**, your foe dominates this exchange. You stay in a bad spot and must [Pay the Price](/starforged-srd/moves/fate/pay_the_price).

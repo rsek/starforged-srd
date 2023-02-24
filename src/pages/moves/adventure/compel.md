@@ -12,4 +12,4 @@ On a **strong hit**, they'll do what you want or agree to your conditions. Take 
 
 On a **weak hit**, as above, but their agreement comes with a demand or complication. Envision their counteroffer.
 
-On a **miss**, they refuse or make a demand that costs you greatly. [Pay the Price](/moves/fate/pay_the_price).
+On a **miss**, they refuse or make a demand that costs you greatly. [Pay the Price](/starforged-srd/moves/fate/pay_the_price).

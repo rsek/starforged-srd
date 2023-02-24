@@ -3,15 +3,17 @@ title: Moves
 </page>
 
 <template>
-	<div class="moves">
-		<ul>
-			<li v-for="moveCategory in moveCategories">
-				<RouterLink :to="moveCategory.href">{{
-					moveCategory.frontmatter.title
-				}}</RouterLink>
-			</li>
-		</ul>
-	</div>
+	<ul>
+		<li v-for="moveCategory in moveCategories">
+			<RouterLink
+				:to="`moves/${moveCategory.filename
+					.split('/')
+					.slice(-2, -1)
+					.join('/')}`"
+				>{{ moveCategory.frontmatter.title }}</RouterLink
+			>
+		</li>
+	</ul>
 </template>
 
 <style>
@@ -28,6 +30,4 @@ title: Moves
 const moveCategories = useDocuments('~/pages/moves/**').value.filter((page) =>
 	page.filename.endsWith('index.md')
 )
-
-console.log(useDocuments('~/pages/moves/**').value)
 </script>

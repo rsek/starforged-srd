@@ -12,6 +12,6 @@ title: React Under Fire
 
 On a **strong hit**, you succeed and are in control. Take +1 momentum.
 
-On a **weak hit**, you avoid the worst of the danger or overcome the obstacle, but not without a cost. Make a [suffer move](/moves/suffer) (-1). You stay in a bad spot.
+On a **weak hit**, you avoid the worst of the danger or overcome the obstacle, but not without a cost. Make a [suffer move](/starforged-srd/moves/suffer) (-1). You stay in a bad spot.
 
-On a **miss**, the situation worsens. You stay in a bad spot and must [Pay the Price](/moves/fate/pay_the_price).
+On a **miss**, the situation worsens. You stay in a bad spot and must [Pay the Price](/starforged-srd/moves/fate/pay_the_price).

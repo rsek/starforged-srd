@@ -15,4 +15,4 @@ On a **hit**, you succeed. On a **strong hit**, take both. On a **weak hit**, ch
 - Take +2 momentum
 - Add +1 on your next move (not a progress move)
 
-On a **miss**, you fail or your assumptions betray you. [Pay the Price](/moves/fate/pay_the_price).
+On a **miss**, you fail or your assumptions betray you. [Pay the Price](/starforged-srd/moves/fate/pay_the_price).

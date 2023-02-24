@@ -12,7 +12,7 @@ On a **strong hit**, you reach a waypoint. Envision the location and mark progre
 
 On a **weak hit**, as above, but this progress costs you. Choose one.
 
-- Suffer costs en route: Make a [suffer move](/moves/suffer) (-2), or two [suffer moves](/moves/suffer) (-1).
+- Suffer costs en route: Make a [suffer move](/starforged-srd/moves/suffer) (-2), or two [suffer moves](/starforged-srd/moves/suffer) (-1).
 - Face a peril at the waypoint: Envision what you encounter.
 
-On a **miss**, you are waylaid by a crisis, or arrive at a waypoint to confront an immediate hardship or threat. Do not mark progress, and [Pay the Price](/moves/fate/pay_the_price).
+On a **miss**, you are waylaid by a crisis, or arrive at a waypoint to confront an immediate hardship or threat. Do not mark progress, and [Pay the Price](/starforged-srd/moves/fate/pay_the_price).

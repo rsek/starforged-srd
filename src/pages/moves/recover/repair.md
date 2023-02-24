@@ -7,7 +7,7 @@ title: Repair
 - Make your own repairs, or direct a companion to make repairs: Roll +wits
 - Obtain repairs from someone (not an ally): Roll +supply
 
-On a **hit**, you gain repair points as appropriate to the situation, per the table below. Additionally, you may [Sacrifice Resources](/moves/suffer/sacrifice_resources) and exchange each -1 of supply for 1 extra repair point (up to 3 points).
+On a **hit**, you gain repair points as appropriate to the situation, per the table below. Additionally, you may [Sacrifice Resources](/starforged-srd/moves/suffer/sacrifice_resources) and exchange each -1 of supply for 1 extra repair point (up to 3 points).
 
 | Situation     | Strong Hit | Weak Hit |
 | ------------- | ---------- | -------- |
@@ -24,4 +24,4 @@ Spend repair points as follows. Unused points are discarded.
 - Repair any other device: 3 points
 - Repair any other device, but with a complication or malfunction: 2 points
 
-On a **miss**, the repairs are not made and the situation worsens. [Pay the Price](/moves/fate/pay_the_price).
+On a **miss**, the repairs are not made and the situation worsens. [Pay the Price](/starforged-srd/moves/fate/pay_the_price).

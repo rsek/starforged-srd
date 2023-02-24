@@ -14,4 +14,4 @@ On a **strong hit**, you are successful and mark progress. On a **strong hit wit
 
 On a **weak hit**, you are successful and mark progress, but also encounter a complication or setback. Envision what occurs and fill a clock segment.
 
-On a **miss**, you fail, or a momentary success is undermined by a dramatic turn of events. Fill a clock segment and [Pay the Price](/moves/fate/pay_the_price). On a **miss with a match**, fill two segments and [Pay the Price](/moves/fate/pay_the_price).
+On a **miss**, you fail, or a momentary success is undermined by a dramatic turn of events. Fill a clock segment and [Pay the Price](/starforged-srd/moves/fate/pay_the_price). On a **miss with a match**, fill two segments and [Pay the Price](/starforged-srd/moves/fate/pay_the_price).

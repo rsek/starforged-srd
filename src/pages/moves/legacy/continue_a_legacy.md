@@ -13,8 +13,8 @@ For each **strong hit**, choose one from below, or one from the weak hit or miss
 
 For each **weak hit**, choose one from below, or one from the miss options.
 
-- See it through: Choose one of the former character's unfinished quests, and [Swear an Iron Vow](/moves/quest/swear_an_iron_vow) (with an automatic strong hit) to see it done. You may immediately mark up to half their earned progress (round down) on this quest.
-- Rebuild a connection: Name one of the former character's connections, and envision how time or circumstances have changed them in a dramatic way. When you [Make a Connection](/moves/connection/make_a_connection) with them, take an automatic strong hit and mark two ticks on your bonds legacy track.
+- See it through: Choose one of the former character's unfinished quests, and [Swear an Iron Vow](/starforged-srd/moves/quest/swear_an_iron_vow) (with an automatic strong hit) to see it done. You may immediately mark up to half their earned progress (round down) on this quest.
+- Rebuild a connection: Name one of the former character's connections, and envision how time or circumstances have changed them in a dramatic way. When you [Make a Connection](/starforged-srd/moves/connection/make_a_connection) with them, take an automatic strong hit and mark two ticks on your bonds legacy track.
 - Explore familiar ground: Name a location that was meaningful to the former character. When you first visit that place, envision how it has changed or is endangered. Then, mark two ticks on your discoveries legacy track.
 
 For each **miss**, choose one.

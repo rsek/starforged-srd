@@ -11,5 +11,5 @@ On a **weak hit**, as above, but you face an unforeseen complication at the end 
 
 On a **miss**, your destination is lost to you, or you come to understand the true nature or cost of the expedition. Envision what happens and choose one.
 
-- Abandon the expedition: Envision the cost of this setback and [Pay the Price](/moves/fate/pay_the_price).
+- Abandon the expedition: Envision the cost of this setback and [Pay the Price](/starforged-srd/moves/fate/pay_the_price).
 - Return to the expedition: Roll both challenge dice, take the lowest value, and clear that number of progress boxes. Then, raise the expedition's rank by one (if not already epic).
