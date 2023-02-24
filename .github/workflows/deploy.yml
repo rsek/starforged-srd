@@ -3,7 +3,7 @@ name: Deploy site to github pages
 on:
   push:
     branches:
-      - $default-branch
+      - master
 
 jobs:
   deploy:
