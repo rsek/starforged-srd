@@ -5,20 +5,24 @@
 			<slot></slot>
 		</div>
 		<ul>
-			<li v-for="move in moves" :key="move.meta.filename">
-				<RouterLink :to="`${move.meta.href.split('/').slice(-2).join('/')}`">{{
-					move.frontmatter.title
-				}}</RouterLink>
+			<li v-for="move in moves" :key="move.href">
+				<RouterLink
+					:to="`/moves/${move.frontmatter.parent_key}/${move.frontmatter.key}`">
+					{{ move.frontmatter.title }}
+				</RouterLink>
 			</li>
 		</ul>
+		<SourceInfo :page="$frontmatter.page"></SourceInfo>
 	</article>
 </template>
 
 <style></style>
 
 <script setup lang="ts">
-const moves = useDocuments('~/pages/moves/**').value.filter(
-	(mdx) =>
-		mdx.href.includes(usePage().meta.href) && !mdx.filename.includes('index')
+const pages = useDocuments('~/pages/moves/**/*')
+const moves = pages.value.filter(
+	(page) =>
+		page.filename !== usePage().meta.filename &&
+		page.frontmatter.parent_key === usePage().frontmatter.key
 )
 </script>

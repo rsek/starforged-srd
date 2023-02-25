@@ -7,9 +7,8 @@
 		<div class="move-text">
 			<slot></slot>
 		</div>
-		<RouterLink :to="`/${$meta.href.split('/').slice(-3, -1).join('/')}`"
-			>Return</RouterLink
-		>
+		<SourceInfo :page="$frontmatter.page"></SourceInfo>
+		<RouterLink :to="`/moves/${$frontmatter.parent_key}`">Return</RouterLink>
 	</article>
 </template>
 

@@ -5,13 +5,9 @@ title: Moves
 <template>
 	<ul>
 		<li v-for="moveCategory in moveCategories">
-			<RouterLink
-				:to="`/moves/${moveCategory.filename
-					.split('/')
-					.slice(-2, -1)
-					.join('/')}`"
-				>{{ moveCategory.frontmatter.title }}</RouterLink
-			>
+			<RouterLink :to="`/moves/${moveCategory.frontmatter.key}`">{{
+				moveCategory.frontmatter.title
+			}}</RouterLink>
 		</li>
 	</ul>
 </template>
@@ -27,7 +23,7 @@ title: Moves
 </style>
 
 <script setup lang="ts">
-const moveCategories = useDocuments('~/pages/moves/**').value.filter((page) =>
-	page.filename.endsWith('index.md')
-)
+const moveCategories = useDocuments('~/pages/moves/*/*')
+	.value.filter((page) => page.filename.includes('index.md'))
+	.sort((cur, prev) => cur.frontmatter.page - prev.frontmatter.page)
 </script>

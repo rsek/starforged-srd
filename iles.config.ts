@@ -2,25 +2,29 @@ import { defineConfig } from 'iles'
 
 export default defineConfig({
 	siteUrl: 'https://rsek.github.io/starforged-srd',
+
 	markdown: {
 		remarkPlugins: ['remark-gfm']
 	},
 	extendFrontmatter(frontmatter, filename) {
 		switch (true) {
-			case /\/moves\/.+/.test(filename):
-				if (/index\.mdx?$/.test(filename)) frontmatter.layout = 'move-category'
-				else frontmatter.layout = 'move'
+			case filename.startsWith('src/pages/moves/'):
+				const fragments = filename.replace(/\.mdx?$/, '').split('/')
+				if (filename.endsWith('index.mdx')) {
+					frontmatter.layout = 'move-category'
+					frontmatter.key = fragments[fragments.length - 2]
+					// dataforged v2 ID
+					frontmatter._id = `starforged/collections/moves/${frontmatter.key}`
+				} else {
+					frontmatter.layout = 'move'
+					frontmatter.key = fragments[fragments.length - 1]
+					frontmatter.parent_key = fragments[fragments.length - 2]
+					// dataforged v2 ID
+					frontmatter._id = `starforged/moves/${frontmatter.parent_key}/${frontmatter.key}`
+				}
 				break
 			default:
 				break
-		}
-	},
-	vue: {
-		template: {
-			compilerOptions: {
-				// for shoelace web components
-				isCustomElement: (tag) => tag.startsWith('sl-')
-			}
 		}
 	}
 })
