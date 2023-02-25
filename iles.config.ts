@@ -1,4 +1,5 @@
 import { defineConfig } from 'iles'
+import { InklineResolver } from 'unplugin-vue-components/resolvers'
 
 export default defineConfig({
 	siteUrl: 'https://rsek.github.io/starforged-srd',
@@ -6,9 +7,14 @@ export default defineConfig({
 		remarkPlugins: ['remark-gfm']
 	},
 	components: {
-		dirs: ['src/components']
+		globs: [
+			'src/components/**/*.vue',
+			'node_modules/@inkline/inkline/components/**/*.vue'
+		],
+		exclude: ['node_modules/@inkline/inkline/components/*/examples/**'],
+		resolvers: [InklineResolver()]
 	},
-	debug: false,
+	// debug: false,
 
 	extendFrontmatter(frontmatter, filename) {
 		switch (true) {
