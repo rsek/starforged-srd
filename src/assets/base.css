@@ -1,5 +1,27 @@
+@import '@kor-ui/kor/kor-styles.css';
+
+/* use an asterisk to allow any element to use the theme attribute. give it any name you wish */
+*[theme='starforged'] {
+	/* the negative color (e.g. white for light theme) */
+	--neutral-1: 255, 255, 255;
+	/* the positive color (e.g. black for dark theme) */
+	--neutral-2: 0, 0, 0;
+	/* the accent color in idle states (blue by default) */
+	--accent-1: 60, 100, 240;
+	/* the accent color in hover states */
+	--accent-1b: 70, 110, 250;
+	/* the accent color in press states */
+	--accent-1c: 50, 90, 230;
+	/* the app-bar background color */
+	--base-0: 0, 0, 2;
+	/* the page background color */
+	--base-1: 15, 15, 15;
+	/* the pane and nav-bar background color */
+	--base-2: 25, 25, 25;
+}
+
 /* color palette from <https://github.com/vuejs/theme> */
-:root {
+/* :root {
   --vt-c-white: #ffffff;
   --vt-c-white-soft: #f8f8f8;
   --vt-c-white-mute: #f2f2f2;
@@ -19,10 +41,10 @@
   --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
   --vt-c-text-dark-1: var(--vt-c-white);
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
-}
+} */
 
 /* semantic color variables for this project */
-:root {
+/* :root {
   --color-background: var(--vt-c-white);
   --color-background-soft: var(--vt-c-white-soft);
   --color-background-mute: var(--vt-c-white-mute);
@@ -71,4 +93,4 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+} */
