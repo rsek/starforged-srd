@@ -1,5 +1,6 @@
 ---
 title: Connection Moves
+page: 162
 ---
 
 **Connections** are NPCs (non-player characters) who represent a deep, vital, or interesting relationship in your story. They are your tethers to the people and places of the Forge.

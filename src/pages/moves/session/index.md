@@ -1,5 +1,6 @@
 ---
 title: Session Moves
+page: 140
 ---
 
 The **session moves** fit into the flow of mechanics and fiction before, during, and after play. They provide methods for setting up content boundaries, adjusting content in the midst of play, and starting and ending your Starforged sessions. They are intended for solo, co-op, and guided modes.
