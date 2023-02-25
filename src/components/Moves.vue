@@ -6,7 +6,7 @@ title: Moves
 	<ul>
 		<li v-for="moveCategory in moveCategories">
 			<RouterLink
-				:to="`moves/${moveCategory.filename
+				:to="`/moves/${moveCategory.filename
 					.split('/')
 					.slice(-2, -1)
 					.join('/')}`"
