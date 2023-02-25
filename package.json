@@ -24,7 +24,6 @@
     "vue-tsc": "^0.38"
   },
   "dependencies": {
-    "@shoelace-style/shoelace": "^2.1.0",
-    "@shoelace-style/vue-sl-model": "^1.0.1"
+    "@kor-ui/kor": "^1.11.3"
   }
 }
