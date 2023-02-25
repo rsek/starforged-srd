@@ -8,7 +8,7 @@
 			<slot></slot>
 		</div>
 		<SourceInfo :page="$frontmatter.page"></SourceInfo>
-		<RouterLink :to="`/moves/${$frontmatter.parent_key}`">Return</RouterLink>
+		<!-- <RouterLink :to="`/moves/${$frontmatter.parent_key}`">Return</RouterLink> -->
 	</article>
 </template>
 

@@ -2,10 +2,14 @@ import { defineConfig } from 'iles'
 
 export default defineConfig({
 	siteUrl: 'https://rsek.github.io/starforged-srd',
-
 	markdown: {
 		remarkPlugins: ['remark-gfm']
 	},
+	components: {
+		dirs: ['src/components']
+	},
+	debug: false,
+
 	extendFrontmatter(frontmatter, filename) {
 		switch (true) {
 			case filename.startsWith('src/pages/moves/'):
