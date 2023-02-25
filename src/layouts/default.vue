@@ -11,8 +11,8 @@
 			<HelloWorld :msg="$frontmatter.title" />
 
 			<div id="nav">
-				<router-link to="/">Home</router-link>
-				<router-link to="/moves">Moves</router-link>
+				<RouterLink to="/">Home</RouterLink>
+				<RouterLink to="/moves">Moves</RouterLink>
 			</div>
 		</div>
 	</header>
