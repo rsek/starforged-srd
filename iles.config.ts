@@ -1,5 +1,6 @@
 import { defineConfig } from 'iles'
 import { InklineResolver } from 'unplugin-vue-components/resolvers'
+import '@inkline/inkline'
 
 export default defineConfig({
 	siteUrl: 'https://rsek.github.io/starforged-srd',
