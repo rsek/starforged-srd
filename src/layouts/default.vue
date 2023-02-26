@@ -1,17 +1,22 @@
 <template>
-	<article class="layout">
-		<section class="sidebar">
-			<IronLogotype />
-			<IronToc />
-		</section>
-		<main class="content"><slot></slot></main>
-	</article>
+	<VLayout>
+		<VNavigationDrawer floating permanent>
+			<VList>
+				<VListItem v-for="moveCat in moveCategories" :key="moveCat.href">
+					<RouterLink :to="`/moves/${moveCat.frontmatter.key}`">{{
+						moveCat.frontmatter.title
+					}}</RouterLink>
+				</VListItem>
+			</VList>
+		</VNavigationDrawer>
+		<slot></slot>
+	</VLayout>
 </template>
+<script setup lang="ts">
+import { useAppConfig } from 'iles'
+import { VueUseComponentsResolver } from 'unplugin-vue-components/resolvers'
 
-<style lang="scss">
-@import '~/assets/base.scss';
-
-.layout {
-	height: 100vh !important;
-}
-</style>
+const moveCategories = useDocuments('~/pages/moves/*/*')
+	.value.filter((page) => page.filename.includes('index.md'))
+	.sort((cur, prev) => cur.frontmatter.page - prev.frontmatter.page)
+</script>

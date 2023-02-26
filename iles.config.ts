@@ -1,15 +1,18 @@
 import { defineConfig } from 'iles'
+import { Vuetify3Resolver } from 'unplugin-vue-components/resolvers'
+
 export default defineConfig({
 	// turbo: true,
 	siteUrl: 'https://rsek.github.io/starforged-srd',
 	markdown: {
 		remarkPlugins: ['remark-gfm']
 	},
-	vite: {},
+	vite: {
+		ssr: { noExternal: ['vuetify'] }
+	},
 	components: {
-		globs: ['src/components/**/*.vue']
-		// exclude: ['node_modules/@inkline/inkline/components/*/examples/**'],
-		// resolvers: [InklineResolver()]
+		dirs: ['src/components', 'node_modules/vuetify'],
+		resolvers: [Vuetify3Resolver()]
 	},
 	// debug: false,
 
