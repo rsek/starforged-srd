@@ -1,14 +1,15 @@
-import { Inkline } from '@inkline/inkline'
+import { Inkline, ITable, type PrototypeConfig } from '@inkline/inkline'
 import { defineApp } from 'iles'
-import '@inkline/inkline'
 
 import MarkdownRouterLink from '~/components/MarkdownRouterLink.vue'
 
 export default defineApp({
 	enhanceApp(ctx) {
-		ctx.app.use(Inkline, {})
+		const inklineConfig: Partial<PrototypeConfig> = { colorMode: 'system' }
+		ctx.app.use(Inkline, inklineConfig)
 	},
 	mdxComponents: {
-		a: MarkdownRouterLink
+		a: MarkdownRouterLink,
+		table: ITable
 	}
 })

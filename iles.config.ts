@@ -3,9 +3,13 @@ import { InklineResolver } from 'unplugin-vue-components/resolvers'
 import '@inkline/inkline'
 
 export default defineConfig({
+	turbo: true,
 	siteUrl: 'https://rsek.github.io/starforged-srd',
 	markdown: {
 		remarkPlugins: ['remark-gfm']
+	},
+	vite: {
+		ssr: { noExternal: ['@inkline/inkline'] }
 	},
 	components: {
 		globs: [
