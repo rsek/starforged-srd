@@ -1,5 +1,6 @@
-import { Inkline, ITable, type PrototypeConfig } from '@inkline/inkline'
+import { Inkline, type PrototypeConfig } from '@inkline/inkline'
 import { defineApp } from 'iles'
+import { components } from '~/inkline'
 
 import MarkdownRouterLink from '~/components/MarkdownRouterLink.vue'
 
@@ -10,6 +11,6 @@ export default defineApp({
 	},
 	mdxComponents: {
 		a: MarkdownRouterLink,
-		table: ITable
+		table: components.ITable
 	}
 })

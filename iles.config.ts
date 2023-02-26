@@ -3,7 +3,7 @@ import { InklineResolver } from 'unplugin-vue-components/resolvers'
 import '@inkline/inkline'
 
 export default defineConfig({
-	turbo: true,
+	// turbo: true,
 	siteUrl: 'https://rsek.github.io/starforged-srd',
 	markdown: {
 		remarkPlugins: ['remark-gfm']
@@ -16,7 +16,7 @@ export default defineConfig({
 			'src/components/**/*.vue',
 			'node_modules/@inkline/inkline/components/**/*.vue'
 		],
-		exclude: ['node_modules/@inkline/inkline/components/*/examples/**'],
+		// exclude: ['node_modules/@inkline/inkline/components/*/examples/**'],
 		resolvers: [InklineResolver()]
 	},
 	// debug: false,

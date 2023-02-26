@@ -1,13 +1,13 @@
 <template>
 	<IronLayout vertical class="iron-layout">
-		<ISidebar>
+		<ISidebar client:load>
 			<ILayoutHeader class="_padding-bottom:1/2">
 				<!-- <img alt="logo" class="logo" src="@/assets/logo.svg" /> -->
 				<h1 class="h5 _margin:0">{{ $site.title }}</h1>
 			</ILayoutHeader>
-			<INav vertical>
+			<INav vertical client:load>
 				<INavItem to="/">Home</INavItem>
-				<ICollapsible>
+				<ICollapsible client:load>
 					<ICollapsibleItem title="Moves">
 						<INavItem
 							v-for="moveCat in moveCategories"
