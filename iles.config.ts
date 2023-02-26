@@ -1,23 +1,15 @@
 import { defineConfig } from 'iles'
-import { InklineResolver } from 'unplugin-vue-components/resolvers'
-import '@inkline/inkline'
-
 export default defineConfig({
 	// turbo: true,
 	siteUrl: 'https://rsek.github.io/starforged-srd',
 	markdown: {
 		remarkPlugins: ['remark-gfm']
 	},
-	vite: {
-		ssr: { noExternal: ['@inkline/inkline'] }
-	},
+	vite: {},
 	components: {
-		globs: [
-			'src/components/**/*.vue',
-			'node_modules/@inkline/inkline/components/**/*.vue'
-		],
+		globs: ['src/components/**/*.vue']
 		// exclude: ['node_modules/@inkline/inkline/components/*/examples/**'],
-		resolvers: [InklineResolver()]
+		// resolvers: [InklineResolver()]
 	},
 	// debug: false,
 
