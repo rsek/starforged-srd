@@ -1,6 +1,6 @@
 ## Before next deploy
 
-- [ ] style slice with vuetify components
+- [ ] style slice with agnostic UI
 - [ ] configure colorway for SF brand
 - [ ] configure fonts for SF brand
 

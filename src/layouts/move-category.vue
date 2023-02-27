@@ -4,15 +4,10 @@
 		<div class="move-category-description">
 			<slot></slot>
 		</div>
-		<ul>
-			<li v-for="move in moves" :key="move.href">
-				<RouterLink
-					:to="`/moves/${move.frontmatter.parent_key}/${move.frontmatter.key}`">
-					{{ move.frontmatter.title }}
-				</RouterLink>
-			</li>
-		</ul>
-		<SourceInfo :page="$frontmatter.page"></SourceInfo>
+		<section v-for="move in moves" :key="move.key">
+			<h3>{{ move.frontmatter.title }}</h3>
+			<component :is="move" />
+		</section>
 	</article>
 </template>
 

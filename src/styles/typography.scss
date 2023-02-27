@@ -1,0 +1,21 @@
+@mixin display {
+	font-family: var(--font-family-display);
+	text-transform: uppercase;
+	font-stretch: 100%;
+	font-weight: bolder;
+}
+
+@mixin header {
+	font-family: var(--agnostic-header-font-family);
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+@mixin body {
+	font-family: var(--agnostic-font-family-body);
+	font-stretch: 100%;
+}
+@mixin bodyCompact {
+	@include body;
+	font-stretch: 75%;
+}

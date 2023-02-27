@@ -15,7 +15,7 @@
 		"@islands/headings": "^0.8.2",
 		"eslint-config-prettier": "^8.6.0",
 		"eslint-config-standard-with-typescript": "^34.0.0",
-		"iles": "^0.8.7",
+		"iles": "^0.9.2",
 		"npm": "^9.5.1",
 		"prettier": "^2.8.4",
 		"prettier-config-standard": "^5.0.0",
@@ -25,6 +25,11 @@
 		"vue-tsc": "^0.38"
 	},
 	"dependencies": {
-		"vuetify": "^3.1.6"
+		"@fontsource/encode-sans": "^4.5.10",
+		"@fontsource/exo": "^4.5.11",
+		"agnostic-css": "^1.0.34",
+		"agnostic-vue": "^1.1.3",
+		"rehype-add-classes": "^1.0.0",
+		"vite-plugin-fonts": "^0.7.0"
 	}
 }

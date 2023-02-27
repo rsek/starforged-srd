@@ -1,5 +1,5 @@
 <template>
-	<RouterLink :to="to()"><slot></slot></RouterLink>
+	<a :href="href()"><slot></slot></a>
 </template>
 
 <script setup lang="ts">
@@ -9,5 +9,5 @@ function idToRoute(dataforgedId: string) {
 	return dataforgedId.replace(/^starforged\/(collections\/)?/, '/')
 }
 
-const to = () => idToRoute(props.href)
+const href = () => idToRoute(props.href)
 </script>
