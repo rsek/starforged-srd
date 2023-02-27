@@ -1,23 +1,24 @@
 import { defineConfig } from 'iles'
+import type * as Gfm from 'remark-gfm'
+import { addClasses } from './src/utils/addClasses'
+
+const addClassesOptions: Record<string, string> = {
+	table: 'table table-striped',
+	caption: 'caption-top'
+}
+const gfmOptions: Gfm.Options = {}
 
 export default defineConfig({
 	// turbo: true,
 	siteUrl: 'https://rsek.github.io/starforged-srd',
 	markdown: {
-		remarkPlugins: ['remark-gfm'],
-		rehypePlugins: [
-			[
-				'rehype-add-classes',
-				{ table: 'table table-striped', caption: 'caption-top' }
-			]
-		]
+		remarkPlugins: [['remark-gfm', gfmOptions]],
+		rehypePlugins: [[addClasses, addClassesOptions], 'rehype-slug']
 	},
 
-	vite: {
-		ssr: { noExternal: ['agnostic-vue'] }
-	},
+	vite: {},
 	components: {
-		dirs: ['src/components', 'node_modules/agnostic-vue']
+		dirs: ['src/components']
 	},
 
 	extendFrontmatter(frontmatter, filename) {
@@ -33,7 +34,7 @@ export default defineConfig({
 							frontmatter.key as string
 						}`
 					} else {
-						frontmatter.layout = 'move'
+						// frontmatter.layout = 'move'
 						frontmatter.key = fragments[fragments.length - 1]
 						frontmatter.parent_key = fragments[fragments.length - 2]
 						// dataforged v2 ID

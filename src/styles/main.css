@@ -1,0 +1,36 @@
+@import url('open-props/normalize.min.css');
+@import url('open-props/open-props.min.css');
+@import url('./typography.css');
+@import url('./themes.css');
+
+ul {
+	--brand-bullet-size: 1em;
+	display: block;
+	margin-inline-start: calc(
+		var(--brand-bullet-size) + var(--list-item-inset, 1em)
+	);
+
+	& li {
+		display: block inline-block;
+		list-style: none;
+
+		&::before {
+			display: inline-block;
+			margin-inline-start: calc(-1 * var(--brand-bullet-size));
+			background-color: currentcolor;
+			width: var(--brand-bullet-size);
+			height: var(--brand-bullet-size);
+			vertical-align: -10%;
+			content: '';
+			mask-image: url('~/img/bullet.svg');
+			mask-position: center left;
+			mask-size: 80%;
+			mask-repeat: no-repeat;
+		}
+	}
+
+	li,
+	ol {
+		margin: 0.05em 0;
+	}
+}

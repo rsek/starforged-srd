@@ -1,0 +1,18 @@
+diff --git a/node_modules/@types/css-tree/index.d.ts b/node_modules/@types/css-tree/index.d.ts
+index e6a09d2..90d3989 100755
+--- a/node_modules/@types/css-tree/index.d.ts
++++ b/node_modules/@types/css-tree/index.d.ts
+@@ -862,8 +862,13 @@ export class Lexer {
+     matchProperty(propertyName: string, value: CssNode | string): LexerMatchResult;
+     matchType(typeName: string, value: CssNode | string): LexerMatchResult;
+     match(syntax: DSNode | string, value: CssNode | string): LexerMatchResult;
++    findValueFragments(propertyName: string, value: CssNode|string,type:string,name:string): ReturnType<typeof matchFragments>
++    findDeclarationValueFragments(declaration:Declaration, type:string, name:string): ReturnType<typeof matchFragments>
++    findAllFragments(ast: CssNode, type:string, name: string) : ReturnType<typeof Lexer['findDeclarationValueFragments']>
+ }
+ 
++export function matchFragments(lexer: Lexer, ast: CssNode, match: LexerMatchResult, type:string, name: string): any[];
++
+ export function fork(extension: {
+     atrules?: Record<string, string> | undefined,
+     properties?: Record<string, string> | undefined,

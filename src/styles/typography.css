@@ -1,0 +1,54 @@
+@import url('@fontsource/encode-sans/variable-full.css');
+@import url('@fontsource/exo/variable.css');
+
+:root {
+	/* display, mono, header, */
+	--font-body: 'Encode SansVariable', var(--font-sans);
+	--font-header: 'Encode SansVariable', var(--font-sans);
+	--font-display: 'ExoVariable', var(--font-sans);
+	--font-compact: 'Encode SansVariable', var(--font-sans);
+
+	word-spacing: var(--font-letterspacing-1);
+	letter-spacing: var(--font-letterspacing-1);
+	font-family: var(--font-body);
+	font-stretch: 115%;
+}
+
+.type-header,
+:where(h3, h4, h5, h6) {
+	text-transform: uppercase;
+	word-spacing: var(--font-letterspacing-1);
+	letter-spacing: var(--font-letterspacing-1);
+	font-family: var(--font-header);
+	font-stretch: 100%;
+	font-weight: var(--font-weight-7);
+}
+
+.type-display,
+:where(h1, h2) {
+	text-transform: uppercase;
+	word-spacing: var(--font-letterspacing-1);
+	letter-spacing: var(--font-letterspacing-1);
+	font-family: var(--font-display);
+	font-stretch: 100%;
+	font-weight: var(--font-weight-8);
+}
+
+.type-body,
+:where(p) {
+	word-spacing: var(--font-letterspacing-1);
+	letter-spacing: var(--font-letterspacing-1);
+	font-family: var(--font-body);
+	font-stretch: 115%;
+}
+
+.type-compact {
+	word-spacing: var(--font-letterspacing-1);
+	letter-spacing: var(--font-letterspacing-1);
+	font-family: var(--font-body);
+	font-stretch: 75%;
+}
+
+:where(a):where([href]) {
+	font-weight: var(--font-weight-5);
+}

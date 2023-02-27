@@ -1,9 +1,11 @@
 ## Before next deploy
 
-- [ ] style slice with agnostic UI
+- [x] style slice with agnostic UI
 - [ ] configure colorway for SF brand
-- [ ] configure fonts for SF brand
+- [x] configure fonts for SF brand
+- [ ] try open-props
 
-## Nice to Have
+## Enhancements
 
-- [ ] investigate remark plugins for terminology/jargon auto-linking
+- [ ] remark plugins for terminology/jargon auto-linking
+- [ ]
