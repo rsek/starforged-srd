@@ -1,5 +1,7 @@
 <template>
-	<a :href="href()" :class="`link-${linkType()}`"><slot></slot></a>
+	<RouterLink :to="href()" :class="`link-${linkType()}`"
+		><slot></slot
+	></RouterLink>
 </template>
 <style lang="pcss">
 .link-move {
@@ -11,19 +13,19 @@
 <script setup lang="ts">
 const props = defineProps<{ href: string }>()
 
-function idToRoute(dataforgedId: string) {
+function idToHref(dataforgedId: string) {
 	let newId = dataforgedId.replace(/^starforged\/(collections\/)?/, '/')
 
 	// convert to slug
 	newId = newId.replace(/(moves|assets)\/([a-z_]*?)\/([a-z_]*?)$/, '$1/$2#$3')
-
+	// TODO: attempt to fix links by prepending slash?
 	return newId
 }
 
 function extractLinkType(dataforgedId: string) {
-	return idToRoute(dataforgedId).split('/')[1]
+	return idToHref(dataforgedId).split('/')[1]
 }
 
-const href = () => idToRoute(props.href)
+const href = () => idToHref(props.href)
 const linkType = () => extractLinkType(props.href).replace(/s$/, '')
 </script>
