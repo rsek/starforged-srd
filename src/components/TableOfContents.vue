@@ -13,7 +13,7 @@
 	</nav>
 </template>
 
-<style lang="scss">
+<style lang="pcss">
 .toc {
 	--toc-border-radius: var(--radius-2);
 	display: flex;
